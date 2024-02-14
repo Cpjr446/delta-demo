@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Pill Bottles</title>
+    <style>
+        /* Add your styles here */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        /* Add more styles as needed */
+    </style>
+    <link href="pill bot css.css"  rel="stylesheet"/>
+</head>
+<body>
+    <header>
+        <h1>Interactive Pill Bottles</h1>
+    </header>
+    <main>
+        <section id="pillBottle">
+            <img id="pillImage" src="path/to/pill-image.jpg" alt="Pill Bottle">
+            <div id="healthTracking">
+                <h2>Health Tracking</h2>
+                <p id="healthStatus">No data available</p>
+                <button onclick="trackHealth()">Track Health</button>
+            </div>
+            <div id="dosageInstructions">
+                <h2>Dosage Instructions</h2>
+                <p id="dosageInfo">No dosage information available</p>
+                <button onclick="showDosageInstructions()">Show Dosage Instructions</button>
+            </div>
+            <div id="smartReminders">
+                <h2>Smart Reminders</h2>
+                <p id="reminderMessage">No reminders set</p>
+                <button onclick="setReminder()">Set Reminder</button>
+            </div>
+            <div id="educationalContent">
+                <h2>Educational Content</h2>
+                <p id="educationInfo">No educational content available</p>
+                <button onclick="showEducationalContent()">Show Educational Content</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Interactive Pill Bottles</p>
+    </footer>
+
+    <script>
+        function trackHealth() {
+            // Implement logic to track health
+            document.getElementById('healthStatus').innerText = 'Health tracked successfully!';
+        }
+
+        function showDosageInstructions() {
+            // Implement logic to fetch and display dosage instructions
+            document.getElementById('dosageInfo').innerText = 'Take one pill daily with water.';
+        }
+
+        function setReminder() {
+            // Implement logic to set a reminder
+            document.getElementById('reminderMessage').innerText = 'Reminder set for tomorrow at 8:00 AM.';
+        }
+
+        function showEducationalContent() {
+            // Implement logic to fetch and display educational content
+            document.getElementById('educationInfo').innerText = 'Learn more about the importance of medication adherence.';
+        }
+    </script>
+</body>
+</html>
